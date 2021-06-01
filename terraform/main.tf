@@ -15,3 +15,9 @@ resource "vault_generic_secret" "example" {
     }
     EOT
 }
+
+
+# Example Creating a Vault Namespace (Good for Multi-Tenancy)
+resource "vault_namespace" "ns1" {
+    path = "SuperDopeNameSpace"
+}
